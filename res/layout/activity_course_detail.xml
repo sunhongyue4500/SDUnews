@@ -1,0 +1,458 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:orientation="horizontal"
+    android:background="#006699">
+    	<ImageButton
+    	    android:id="@+id/course_detail_img_1"
+    	    android:layout_width="47dp"
+    	    android:layout_height="47dp"
+    	    android:src="@drawable/btn_back"
+    	    android:adjustViewBounds="true"
+    	    android:scaleType="centerInside"
+    	    android:background="@drawable/back_button_style"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="0dp"/>
+    	  
+    	<TextView 
+    	    android:id="@+id/course_detail_tex_1"
+    	    android:layout_width="1dp"
+    	    android:layout_height="30dp"
+    	    android:layout_toRightOf="@id/course_detail_img_1"
+    	    android:layout_centerVertical="true"
+    	    android:background="#002848"
+    	    android:layout_marginLeft="5dp"/>
+    	<TextView 
+    	    android:id="@+id/course_detail_tex_2"
+    	    android:layout_width="1dp"
+    	    android:layout_height="30dp"
+    	    android:layout_toRightOf="@id/course_detail_tex_1"
+    	    android:layout_centerVertical="true"
+    	    android:background="#4078b0"/>
+    	<TextView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_centerVertical="true"
+    	    android:gravity="center_vertical|center_horizontal"
+    	    android:textSize="20sp"
+    	    android:text="@string/course_detail_title"
+    	    android:textColor="#ffffff"/>
+    	</RelativeLayout>
+    
+        
+    <!-- 以下是第1条，课程名称 -->
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp">
+	    <TextView 
+	        android:id="@+id/course_detail_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="28sp"
+	        android:gravity="center_horizontal"
+	        android:textColor="#000000"
+	       />
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"
+	    android:layout_marginTop="10dp"/>
+	
+	<ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	
+	<!-- 以下是第2条，课程号 -->
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_num_1"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_num_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第3条，课序号 -->
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_num_2"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_num_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第4条，上课地点 -->
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_loc"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_loc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第5条，上课时间 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_week"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_week"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第6条，学分 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_price"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第7条，学时 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_how_time"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_how_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第8条，教师1 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_teacher_1"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_teacher_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第9条，教师2 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_teacher_2"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_teacher_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第10条，课程属性 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_property"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_property"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第11条，考试方式 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_exam"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_exam"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第12条，课程周次 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_how_week"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_how_week"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第13条，课程容量 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_space"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_space"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第14条，开课学院 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_school"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_school"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第15条，上课年级 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_grade"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_grade"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	
+	<!-- 以下是第16条，上课班级 -->
+	<LinearLayout 									
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/course_detail_class"
+	        android:layout_marginLeft="5dp"
+	        android:textSize="20sp"
+	        android:textColor="#000000"/>
+	    <TextView 
+	        android:id="@+id/course_detail_class"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#006699"/>
+	</LinearLayout>
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#006699"/>
+	</LinearLayout><!-- 这是被Scroll包裹的线性布局 -->
+	</ScrollView>
+
+</LinearLayout>

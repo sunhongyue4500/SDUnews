@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="#ffffff" 
+    android:orientation="vertical">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:orientation="horizontal"
+    android:background="#006699">
+    	<ImageButton
+    	    android:id="@+id/about_img_1"
+    	    android:layout_width="47dp"
+    	    android:layout_height="47dp"
+    	    android:src="@drawable/btn_back"
+    	    android:adjustViewBounds="true"
+    	    android:scaleType="centerInside"
+    	    android:background="@drawable/back_button_style"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_centerVertical="true"
+    	    android:layout_marginLeft="0dp"/>
+    	  
+    	<TextView 
+    	    android:id="@+id/about_tex_1"
+    	    android:layout_width="1dp"
+    	    android:layout_height="30dp"
+    	    android:layout_toRightOf="@id/about_img_1"
+    	    android:layout_centerVertical="true"
+    	    android:background="#002848"
+    	    android:layout_marginLeft="5dp"/>
+    	<TextView 
+    	    android:id="@+id/about_tex_2"
+    	    android:layout_width="1dp"
+    	    android:layout_height="30dp"
+    	    android:layout_toRightOf="@id/about_tex_1"
+    	    android:layout_centerVertical="true"
+    	    android:background="#4078b0"/>
+    	<TextView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_centerVertical="true"
+    	    android:gravity="center_vertical|center_horizontal"
+    	    android:textSize="20sp"
+    	    android:text="软件相关"
+    	    android:textColor="#ffffff"/>
+    	</RelativeLayout>
+
+</LinearLayout>

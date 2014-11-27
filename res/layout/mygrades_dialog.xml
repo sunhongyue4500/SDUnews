@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFF"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="55dp"
+            android:background="@drawable/dialog_1" >
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="用户登录"
+                android:textColor="#ffffff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    
+    
+        <LinearLayout 
+            android:layout_width="240dp"
+            android:layout_height="270dp"
+            android:background="@drawable/dialog_2"
+            android:orientation="vertical">
+            <EditText 
+                android:id="@+id/MyGrades_usename"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/dialog_3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_bg"
+                />
+            <EditText 
+                android:id="@+id/MyGrades_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/dialog_4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:password="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edit_bg"
+                />
+            <CheckBox 
+	        	android:id="@+id/mygrades_issave"
+		        android:text="保存用户名和密码"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:textColor="#ffffff"
+		        android:textSize="15sp"
+		        android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <TextView 
+                android:layout_marginTop="5dp"
+                android:id="@+id/dialog_true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/dialog_5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="登陆"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="18sp"/>
+            <TextView 
+                android:id="@+id/dialog_flase"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/dialog_6"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="5dp"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    
+    <!--  
+    <TableRow >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+        <TextView 
+            android:text="@string/MyGrades_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <EditText 
+            android:id="@+id/MyGrades_usename"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:numeric="integer"
+            android:hint="请在这里输入你的学号"/>
+        </LinearLayout>
+    </TableRow>
+	<TableRow >
+	    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+	    <TextView 
+            android:text="@string/MyGrades_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"/>
+        <EditText 
+            android:id="@+id/MyGrades_password"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:hint="请在这里输入你的选课密码"/>
+        </LinearLayout>
+	</TableRow>
+	-->
+	
+	
+
+</LinearLayout>

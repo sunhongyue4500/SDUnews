@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">信院新闻中心</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+    <string name="title_activity_news_detail">NewsDetail</string>
+    <string name="title_activity_course">CourseActivity</string>
+    <string name="title_activity_import_course">ImportCourseActivity</string>
+    <string name="course_detail_title">课程详情</string>
+    <string name="course_detail_name">课程：</string>
+    <string name="course_detail_num_1">课程号：</string>
+    <string name="course_detail_num_2">课序号：</string>
+    <string name="course_detail_loc">上课地点：</string>
+    <string name="course_detail_week">上课时间：</string>
+    <string name="course_detail_price">学分：</string>
+    <string name="course_detail_how_time">学时：</string>
+    <string name="course_detail_teacher_1">教师1：</string>
+    <string name="course_detail_teacher_2">教师2：</string>
+    <string name="course_detail_property">课程属性：</string>
+    <string name="course_detail_exam">考试方式：</string>
+    <string name="course_detail_how_week">课程周次：</string>
+    <string name="course_detail_space">课程容量：</string>
+    <string name="course_detail_school">开课学院：</string>
+    <string name="course_detail_grade">上课年级：</string>
+    <string name="course_detail_class">上课班级：</string>
+    <string name="course_activity_import">导入</string>
+    <string name="course_activity_single">单日</string>
+    <string name="week_1">周一</string>
+    <string name="week_2">周二</string>
+    <string name="week_3">周三</string>
+    <string name="week_4">周四</string>
+    <string name="week_5">周五</string>
+    <string name="week_6">周六</string>
+    <string name="week_7">周日</string>
+
+    <!-- 在MyGrades中 -->
+    <string name="MyGrades_Title">所有成绩</string>
+    <string name="MyGrades_username">用户名：\t</string>
+    <string name="MyGrades_password">密码：\t\t</string>
+    <string name="MyGrades_issave">保存用户名和密码</string>
+    <string name="item_1">课程号：</string>
+    <string name="item_2">课序号：</string>
+    <string name="item_3">&#160;&#160;&#160;学分：</string>
+    <string name="item_4">属性：</string>
+    <string name="my_grades_write_off">注销</string>
+    <string name="my_grades_refresh">刷新</string>
+    <string name="grades_step1">Step&#160;1&#160;of&#160;2&#160;&#160;</string>
+    <string name="grades_step2">Step&#160;2&#160;of&#160;2&#160;&#160;</string>
+    <string name="jidian">查看绩点</string>
+    <string name="internet_waring1">正在刷新。。。\n\n请确保网络通畅\n根据网络状况\n刷新过程可能持续5-30秒\n请您耐心等待～</string>
+    <string name="title_activity_information_fee">InformationFee</string>
+    <string name="information_username">学号：\t\t</string>
+    <string name="information_password">密码：\t\t</string>
+    <string name="information_verification">验证码：\t</string>
+    <string name="information_getVerification">获取验证码</string>
+    <string name="information_submit">提交</string>
+    <string name="information_how_much">金额：</string>
+    <string name="information_10">10</string>
+    <string name="information_20">20</string>
+    <string name="information_30">30</string>
+    <string name="internet_waring">请确保网络通畅，否则可能会出现意想不到的错误</string>
+    <string name="password_qury">这里是校园卡查询密码！</string>
+    <string name="username">请在这里输入你的学号</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+</resources>
